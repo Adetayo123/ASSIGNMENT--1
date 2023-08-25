@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task-3-javascript</title>
+</head>
+<body>
+  
+    <h2>Kilometer to Meters Length Converter</h2>
+    <p>Input a value in the Kilometers section to convert the value to Meters</p>
+  
+    <p>
+      <span>Kilometer</span>
+      <input type="number" placeholder="Kilometer" oninput="convertUnit(this.value)"
+        onchange="convertUnit(this.value)">
+    </p>
+    <p>Meters: <div class="meter"></div></p>
+  
+    <script>
+      function convertUnit(unitNum) {
+        document.querySelector(".meter").innerHTML = unitNum * 1000;
+        
+      }
+    </script>
+</body>
+</html>
